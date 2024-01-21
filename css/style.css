@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFF5EA;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    text-align: right;
+    line-height: 80px;
+    background-color: #ffffffba;
+    z-index: 3;
+}
+
+nav a {
+    font-family: "Inconsolata", monospace;
+    margin-right: 35px;
+    color: black;
+    font-size: 23px;
+}
+
+.logo {
+    float: left;
+    height: 80px;
+    margin-left: 10px;
+}
+
+.inizio-container {
+    height: 590px;
+    position: relative;
+    padding-top: 330px;
+}
+
+.inizio-container h1 {
+    font-size: 70px;
+
+    font-family: "Inconsolata", monospace;
+}
+
+.inizio-container h2 {
+    font-family: "Mooli";
+    padding-top: 20px;
+}
+
+.inizio-text {
+    text-align: center;
+}
+
+.inizio-text .box {
+    width: 500px;
+    padding: 50px 100px;
+    margin: auto;
+    border: 4px solid white;
+    outline: 1px solid black
+}
+
+.inizio-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #FFF5EA;
+    width: 100%;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1
+}
+
+.about {
+    padding: 50px;
+    background-color: #FBFFF4;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-family: "Inconsolata", monospace;
+}
+
+.about h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "Inconsolata", monospace;
+}
+
+.sec-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec {
+    width: 350px;
+}
+
+.sec p {
+    font-family: "Mooli";
+    font-size: 18px;
+}
+
+.divider {
+    height: 300px;
+    background-image: url("../img/divider1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact h1, .latest h1{
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-family: "Inconsolata", monospace;
+}
+.contact h2{
+    font-family: "Inconsolata", monospace;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.contact, .latest{
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-container {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+}
+
+.contact-card svg {
+    height: 50px;
+    float: left;
+}
+
+.contact-card {
+    transition: all 0.5s;
+    line-height: 50px;
+    padding: 15px;
+    box-shadow: 0px 5px 7px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    width: 450px;
+    border-radius: 4px;
+}
+.contact-card:hover{
+    transition: all 0.3s;
+    transform: translateY(-8px);
+    box-shadow: 1px 6px 8px 7px rgba(0, 0, 0, 0.35);
+}
+.contact-card a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: "Mooli";
+    color: black;
+}
