@@ -11,7 +11,7 @@ body {
     background-color: #FFF5EA;
 }
 
-nav {
+.main-nav {
     width: 100%;
     position: absolute;
     height: 80px;
@@ -21,7 +21,7 @@ nav {
     z-index: 3;
 }
 
-nav a {
+.main-nav a {
     font-family: "Inconsolata", monospace;
     margin-right: 35px;
     color: black;
@@ -168,4 +168,14 @@ nav a {
     text-decoration: none;
     font-family: "Mooli";
     color: black;
+}
+
+.note-nav{
+    background-color: #e9eae6;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+#list li ul{
+    margin-left: 50px;
 }
