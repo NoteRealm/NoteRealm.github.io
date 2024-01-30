@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#search_id").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#list li").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html"><img src="img/logo.light.png" alt="Logo" class="logo"></a>
+            <a href="appunti.html">Appunti</a>
+            <a href="">Guide allo studio</a>
+        </nav>
+        <!-- <nav class="note-nav">
+             <button>
+                Tutto
+            </button>
+            <button>
+                Italiano
+            </button>
+            <button>
+                Storia
+            </button>
+            <button>
+                Sistemi e reti
+            </button>
+            <button>
+                Telecomunicazioni
+            </button>
+            <button>
+                Informatica
+            </button>
+            <button>
+                TPS
+            </button> 
+        </nav> -->
+    </header>
+    <input id="search_id" type="text" placeholder="Cerca" style="margin-top:100px;">
+    <br>
+
+    <ul id="list">
+        <li>Italiano
+            <ul>
+                <li>Letteratura delle origini</li>
+                <li>Dante</li>
+                <li>Petrarca</li>
+                <li>Machiavelli</li>
+                <li>Barocco</li>
+                <li>Illuminismo</li>
+            </ul>
+        </li>
+        <li>Storia
+            <ul>
+                <li>Antico Regime</li>
+                <li>Illuminismo</li>
+                <li>Independenza Americana</li>
+                <li>Rivoluzione Francese</li>
+                <li>Napoleone</li>
+            </ul>
+        </li>
+        <li>Sistemi e reti
+            <ul>
+                <li>TCP/IP</li>
+                <li>Subnetting</li>
+                <li>Supernetting</li>
+                <li>NAT e PAT</li>
+                <li>DHCP</li>
+            </ul>
+        </li>
+        <li>Telecomunicazioni
+            <ul>
+                <li>Componenti</li>
+                <li>Legge di Ohm</li>
+                <li>Leggi di Kirchoff</li>
+                <li>Risolvere i circuiti</li>
+                <li></li>
+            </ul>
+        </li>
+        <li>Informatica
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li>TPS
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
